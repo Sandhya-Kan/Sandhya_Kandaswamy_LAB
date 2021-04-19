@@ -1,0 +1,64 @@
+<html>  
+<head>  
+<title>Customize Profile</title>  
+</head>  
+<style>
+
+p{
+border: thick solid blue;
+color : blue;
+}
+  
+</style>
+<body>  
+	<p id="p1">
+	I have a huge passion for game development and programming.I love to learn and thrive from challenges
+	</p>
+
+<br></br> 	
+<td>Provide values in the range 0 to 255</td>
+<br></br> 
+<!-- Enter rgb value -->  
+<td>Enter red value :</td>  
+<input type = "text" id = "red" value = "">   
+ <br></br>  
+<td>Enter green value :</td>  
+<input type = "text" id = "green" value = "">   
+<br></br> 
+<td>Enter blue value :</td>  
+<input type = "text" id = "blue" value = "">   
+<br></br>  
+<button onclick= "myColor()" id= "btn1"> Click to change bg color </button>
+
+<br></br> 
+<!-- Enter rgb value -->  
+<td>Enter red value :</td> 
+<input type = "text" id = "red1" value = "">   
+ <br></br>  
+<td>Enter green value :</td> 
+<input type = "text" id = "green1" value = "">   
+<br></br> 
+<td>Enter blue value :</td>   
+<input type = "text" id = "blue1" value = "">   
+<br></br>   
+<button onclick= "myBorder()" id= "btn2"> Click to change border color </button>
+
+</body> 
+<script>  
+function myColor() {  
+let r = document.getElementById("red").value;  
+let g = document.getElementById("green").value;
+let b = document.getElementById("blue").value; 
+var color = 'rgb('+r+','+g+','+b+')';
+document.getElementById("p1").style.backgroundColor= color; 
+}
+function myBorder() { 
+let r1 = document.getElementById("red1").value;  
+let g1 = document.getElementById("green1").value;
+let b1 = document.getElementById("blue1").value; 
+var color = 'rgb('+r1+','+g1+','+b1+')';
+document.getElementById("p1").style.borderColor = color;
+}
+
+</script> 
+</html>
