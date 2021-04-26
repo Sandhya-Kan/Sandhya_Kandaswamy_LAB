@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>D2SU</title>
+        <meta name="description" content="This is the description">
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <header class="main-header">
+            <nav class="nav main-nav">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="store.html">STORE</a></li>
+                </ul>
+            </nav>
+            <h1 class="band-name band-name-large">D2SU Online Store</h1>
+            <div class="container">
+                <button type="button" class="btn btn-header">Enjoy your Shopping !!!</button>
+            </div>
+
+        </header>
+        <section class="content-section container">
+          <form method="post" action="store.php">
+            <h2 class="section-header">ITEMS</h2>
+            <div>
+              <div class="tour-newrow">
+                  <span class="tour-item tour-name">ItemName</span>
+                  <span class="tour-item tour-price">Price</span>
+                  <span class="tour-item tour-price">Quantity</span>
+              </div>
+                <div class="tour-row">
+                    <span class="tour-item tour-name">Toy</span>
+                    <span class="tour-item tour-price">$23</span>
+                    <input type="button" value="-" class="minus"><input type="number" step="1" min="1" max="" name="quantity1" value="1" title="Qty" class="input-text qty text" size="3" pattern="" inputmode="">
+                    <input type="button" value="+" class="plus">
+                </div>
+                <div class="tour-row">
+                    <span class="tour-item tour-name">Instant Pot</span>
+                    <span class="tour-item tour-price">$56</span>
+                    <input type="button" value="-" class="minus"><input type="number" step="1" min="1" max="" name="quantity2" value="1" title="Qty" class="input-text qty text" size="3" pattern="" inputmode="">
+                    <input type="button" value="+" class="plus">
+                </div>
+                <div class="tour-row">
+                    <span class="tour-item tour-name">Tennis Racquet</span>
+                    <span class="tour-item tour-price">$80</span>
+                    <input type="button" value="-" class="minus"><input type="number" step="1" min="1" max="" name="quantity3" value="1" title="Qty" class="input-text qty text" size="3" pattern="" inputmode="">
+                    <input type="button" value="+" class="plus">
+                </div>
+                <div class="tour-row">
+                    <span class="tour-item tour-name">Earphone</span>
+                    <span class="tour-item tour-price">$99</span>
+                    <input type="button" value="-" class="minus"><input type="number" step="1" min="1" max="" name="quantity4" value="1" title="Qty" class="input-text qty text" size="3" pattern="" inputmode="">
+                    <input type="button" value="+" class="plus">
+                </div>
+
+                <div class="tour-row">
+                  <P><b>Choose your shipping method</b><BR>
+                  <input type="radio" name="ship1" value="Free 7 day">Free 7 day<BR>
+                  <input type="radio" name="ship2" value="$50.00 over night">$50.00 over night<BR>
+                  <input type="radio" name="ship3" value="$5.00 three day">$5.00 three day<BR>
+                  </p>
+                </div>
+                </div>
+                <input type="submit" name="submit" value="submit" />
+                <BR>
+                  <BR>
+              </form>
+        </section>
+        <footer class="main-footer">
+            <div class="container main-footer-container">
+                <h3 class="band-name">D2SU</h3>
+                <ul class="nav footer-nav">
+                    <li>
+                        <a href="https://www.youtube.com" target="_blank">
+                            <img src="youtube.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.spotify.com" target="_blank">
+                            <img src="spotify.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com" target="_blank">
+                            <img src="facebook.png">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>
