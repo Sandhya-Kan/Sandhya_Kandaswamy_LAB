@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Delete Posts</title>
+<link rel="stylesheet" href="styles1.css" />
+</head>
+<body class="main-nav">
+<nav >
+             
+                    <a  style='text-align: center;
+    font-size: 0.5em;
+    font-weight: lighter;
+	color: black;
+    border-bottom: 1px solid rgba(255,182,193,1)'href="index.html">HOME</a>
+					<a style='text-align: center;
+    font-size: 0.5em;
+    font-weight: lighter;
+	color: black;
+    border-bottom: 1px solid rgba(255,182,193,1)' href="AdminHome.html">ADMIN HOME</a>
+            </nav>
+<BR>
+<BR>
+<h1>Delete Posts</h1>
+
+<form method="post" action="DeletePosts.php">
+<?php
+
+$mysqli = new mysqli("mysql.eecs.ku.edu", "sankandaswamy", "Eez4uHae","sankandaswamy");
+/* check connection */
+if ($mysqli->connect_errno) {
+ printf("Connect failed: %s\n", $mysqli->connect_error);
+ exit();
+}
+
+
+$result = $mysqli->query("SELECT post_id,author_id,content FROM posts order by author_id");
+
+if($result->num_rows>0){
+echo "<h1 style='background-color: rgba(255,182,193,1);text-align: center'>Here is your Users posts !!</h1>";
+echo "<table border =\"2\" style='border-collapse: collapse; font-size: 30px;width:50% ; height:50px ;text-align: center;margin-left: auto;margin-right: auto'>
+<tr><th>Author ID</th><th>Content</th><th>Delete ?</th></tr>";
+
+while ($row = $result -> fetch_assoc()) {
+	echo "<tr style='text-align: center'>";
+	echo"<td style='text-align: left'>".$row["author_id"]."</td>";
+	echo"<td style='text-align: left'>".$row["content"]."</td>";
+    echo'<td><input style="width:30px;height: 30px" type="checkbox" name="checkbox[]" value='.$row["post_id"].' id="checkbox"></td>';
+	echo"</tr>";
+}
+
+echo "</table>";
+  $result -> free_result();
+}
+else{
+	echo "<h2 style=background-color: rgba(255,182,193,1)>No data exists in table </h2>";
+}
+
+
+$mysqli->close();
+
+?>
+<BR><BR><BR>
+<input style='  background-color: #DB7093;font-size: 20px;width:150px ; height:50px' type="submit" name="submit" value="SUBMIT" />
+</form>
+</body>
+</html>

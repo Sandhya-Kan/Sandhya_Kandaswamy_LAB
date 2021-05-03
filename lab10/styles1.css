@@ -1,0 +1,62 @@
+
+.main-nav {
+  background-color: rgba(255,182,193,1);
+    text-align: center;
+    font-size: 1.8em;	
+    font-weight: lighter;
+}
+.posttext {
+  height: 100px;
+  width: 500px;
+  text-align: left;
+  font-size: 20px;
+  background-color: white;
+}
+.usertext {
+  height: 30px;
+  width: 200px;
+  font-size: 25px;
+  background-color: white;
+}
+.button {
+  background-color: #DB7093; 
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+}
+.main {
+  background-color: #DB7093; 
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.select {
+  // A reset of styles, including removing the default dropdown arrow
+  appearance: none;
+  // Additional resets for further consistency
+  background-color: transparent;
+  border: none;
+  padding: 0 1em 0 0;
+  margin: 0;
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: inherit;
+  line-height: inherit;
+}
+
+.main-nav1 {
+    text-align: center;
+    font-size: 1em;
+    font-weight: lighter;
+	color: Red;
+    border-bottom: 1px solid rgba(255,182,193,1);
+}

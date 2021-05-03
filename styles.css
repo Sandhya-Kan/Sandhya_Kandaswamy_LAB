@@ -21,16 +21,19 @@ html, body {
 
 .nav ul {
     margin: 0;
+	
 }
 
 .nav li {
     display: inline;
+	background-color: #DB7093; 
+	 color: Red; 
 }
 
 .nav a {
     display: inline-block;
     padding: .5em;
-    color: white;
+    color: red;
     text-decoration: none;
 }
 
@@ -38,6 +41,7 @@ html, body {
     text-align: center;
     font-size: 1.1em;
     font-weight: lighter;
+	color: Red;
     border-bottom: 1px solid rgba(255,182,193,1)
 }
 

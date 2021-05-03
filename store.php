@@ -27,15 +27,15 @@ if(isset($_POST['submit'])) {
               $Total=$Total+($quantity4*99);
             }
 
-            if($shipping1=="Free 7 day"){
+            if($shipping1=="Free 7 day" && $Total>0){
               $shippingcost=0;
               $shipname="Free 7 day";
             }
-            if($shipping2=="$50.00 over night"){
+            if($shipping2=="$50.00 over night" && $Total>0){
               $shippingcost=50;
               $shipname="$50.00 over night";
             }
-            if($shipping3=="$5.00 three day"){
+            if($shipping3=="$5.00 three day" && $Total>0){
               $shippingcost=5;
               $shipname="$5.00 three day";
             }
